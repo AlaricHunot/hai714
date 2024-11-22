@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/envconv.css">
+    <script type="text/javascript" src="js/Colors.js"></script>
+    <script type="text/javascript" src="js/Coord2D.js"></script>
+    <script type="text/javascript" src="js/TriRadial.js"></script>
+    <script type="text/javascript" src="js/EnveloppeConvexe.js"></script>
+    <script type="text/javascript" src="js/DataSet.js"></script>
+    <script type="text/javascript" src="js/Animation.js"></script>
+    <script type="text/javascript" src="js/Test.js"></script>
+    <script type="text/javascript" src="js/Ev.js"></script>
+    <script type="text/javascript" src="js/ControlPanel.js"></script>
+    <script type="text/javascript" src="js/Displayer.js"></script>
+</head>
+<body>
+    <div id="test"></div>
+    <script type="text/javascript">
+        window.onload = function () {
+            let testArea = document.getElementById("test");
+            let cp = new ControlPanel(testArea);
+            let displayer = new Displayer(testArea);
+            let activeTest = new Test(Test.defaultAction);
+            cp.setTest(activeTest);
+            displayer.setTest(activeTest);
+            activeTest.setUI(cp, displayer);
+            activeTest.run();
+        }
+    </script>
+</body>
+</html>

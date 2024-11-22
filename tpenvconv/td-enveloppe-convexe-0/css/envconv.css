@@ -1,0 +1,44 @@
+body{
+	font-family: Calibri,Verdana, Geneva, sans-serif;
+	font-size: 11pt;
+	background:#41566E;
+	color:#EEC;
+}
+#leftPane{
+	float: left;
+	width: 15em;
+	border: 1px dotted white;
+    padding-left:3px;
+}
+
+select{
+	margin-top:1em;
+	margin-bottom:1em;
+}
+canvas {
+	border: 1px dotted white;
+	margin-left: 3px;
+	float: left;
+	margin-left: 1em;
+}
+
+/* Links ----------------------------------------------- */
+a:link {
+	color: #fb7;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #EEC;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #fd0;
+	text-decoration: underline;
+}
+
+a img {
+	border-width: 0;
+}
+
